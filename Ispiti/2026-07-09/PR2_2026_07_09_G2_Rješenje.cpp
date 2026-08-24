@@ -576,16 +576,18 @@ public:
 	}
 
 };
+
 const char* GetOdgovorNaPrvoPitanje() {
 	cout << "Pitanje -> Pojasnite zbog cega se operator<< implementira kao globalna a ne funkcija clanica, te na koji nacin se implementiraju prefiksalni i postfiksalni oblik operatora inkrementiranja ? \n";
-	return "Odgovor -> OVDJE UNESITE VAS ODGOVOR";
+	return "Odgovor -> operator<< se implementira kao globalna funkcija jer lijevi operand nije objekat naše klase, a prefiksni i postfiksni ++ razlikuju se po parametru int kod postfiksnog oblika.";
 }
+
 const char* GetOdgovorNaDrugoPitanje() {
 	cout << "Pitanje -> Pojasnite nacin na koji biste, koristeci obradjene klase i metode, mogli saznati velicinu nekog tekstualnog fajla.\n";
-	return "Odgovor -> OVDJE UNESITE VAS ODGOVOR";
+	return "Odgovor -> Veličinu tekstualnog fajla možemo saznati otvaranjem fajla, pozicioniranjem na njegov kraj pomoću seekg() i očitavanjem pozicije pomoću tellg()";
 }
+
 int main() {
-	/*
 	cout << PORUKA_TELEFON; cin.get();
 	cout << PORUKA_TELEFON; cin.get();
 	cout << PORUKA_ISPIT; cin.get();
@@ -594,6 +596,7 @@ int main() {
 	cin.get();
 	cout << GetOdgovorNaDrugoPitanje() << crt;
 	cin.get();
+	/*
  Funkcija GenerisiOznaku generise oznaku servisnog zahtjeva u
 formatu:
  SRV-BBB/IN-GGGG
