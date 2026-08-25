@@ -9,4 +9,4 @@
 
 - enum StatusZahtjeva { ZAPRIMLJEN, DIJAGNOSTIKA, POPRAVKA, ZAVRSEN };
 - Kolekcija pointer na dinamicki niz (T* elementi)
-- string, vector, advanced regex, generisi oznaku, threadovi
+- string, vector, advanced regex, generisi oznaku
